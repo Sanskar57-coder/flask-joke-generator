@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random Joke Generator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #b7292c );
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            width: 420px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .type {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.2);
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .setup {
+            font-size: 22px;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        .punchline {
+            font-size: 18px;
+            color: #ffe082;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <h1>😂Lame Random Joke</h1>
+
+        
+
+        <div class="setup">
+            {{ joke.setup }}
+        </div>
+
+        <div class="punchline">
+            {{ joke.punchline }}
+        </div>
+
+        <a href="/" class="btn">Get Another Joke</a>
+
+    </div>
+
+</body>
+</html>
